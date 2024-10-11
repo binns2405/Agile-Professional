@@ -1,0 +1,408 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+a {
+	color: #007FB0;
+}
+
+.fade-in {
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: 0.6s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+}
+.logo {
+	height: 5em;
+	width: 15em;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	position: relative;
+}
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+body {
+	font-family: Montserrat, Arial, sans-serif;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	/* Sets the flex container to vertical column layout. */
+	min-height: 100vh;
+	/* Body takes up full height of viewport. */
+	box-sizing: inherit;
+	font-weight: 500;
+	overflow-x: hidden;
+	/* Hide horizontal scrollbar */
+}
+header {
+	margin-left: auto;
+	display: flex;
+	position: relative;
+	width: 100%;
+	background-color: #BE1622;
+	text-align: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.myNav {
+	align-items: center;
+	padding: 0em;
+	margin: 0em;
+	display: flex;
+	flex-direction: row;
+}
+nav {
+	margin: auto;
+}
+.navList {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.1em;
+	margin: 2em;
+	list-style-type: none;
+	flex: auto;
+	width: 100%;
+}
+.navList a {
+	text-decoration: none;
+	color: ghostwhite;
+}
+.navList a:hover {
+	color: gainsboro;
+}
+main {
+	flex: 70%;
+	background-color: #ffffff;
+	color: gold;
+	width: 100%;
+}
+.video {
+	background-color: black;
+	width: 100%;
+	padding: 1em;
+	border-radius: 1em;
+	align-content: center;
+}
+footer {
+	font-size: 18px;
+	padding: 20px;
+	text-align: center;
+	margin-top: auto;
+	/* Push the footer to the bottom */
+	background: #34516C;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	flex-wrap: nowrap;
+	justify-content: center;
+	color: white;
+}
+.main::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.wrapper {
+	align-content: center;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.liveofferswrapper {
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+	height:240px;
+}
+
+.offers-box 
+{
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin: 10px;
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+	overflow: auto; /* Choose the overflow behavior */
+}
+
+.Productswrapper {
+	align-content: center;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.FooterCol-1 {
+	width: 500px;
+	padding-right: 10%;
+}
+.FooterCol-2 {
+	width: 500px;
+}
+.FooterCol-3 {
+	width: 500px;
+	padding-left: 10%;
+	height: auto;
+}
+.product-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+}
+.product-box {
+	width: 250px;
+	margin: 20px;
+	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+.product-image {
+	max-width: 100%;
+	height: auto;
+}
+.product-price {
+	margin-top: 10px;
+	font-weight: bold;
+}
+.add-to-cart-btn button{
+	display: block;
+	margin-top: 10px;
+	padding: 8px 15px;
+	background-color: #3498db;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.ContShoppingButton {
+	background-color: #3498db;
+	color: #fff;
+	border-radius: 15px;
+	padding:10px;
+	align-content: center;
+	text-align: center;
+	text-decoration: none;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 400px;
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide.active {
+  display: block;
+}
+
+img {
+}
+
+.imgabout{
+    cursor: none;
+	background-color:rgba(0, 0, 0, 0.0);
+	align-content:right !important;
+	text-align:right !important;
+	flex:right !important;
+	
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  z-index: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none; /* Initially hide hamburger menu icon */
+  cursor: pointer;
+}
+
+.myNav {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.navList {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.1em;
+  margin: 2em;
+  list-style-type: none;
+  flex: auto;
+  width: 100%;
+}
+
+.myNav.active .navList {
+  display: block; /* Display nav items when active */
+}
+
+.navList a {
+  text-decoration: none;
+  color: ghostwhite;
+}
+
+.navList a:hover {
+  color: gainsboro;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1335px) {
+  .navList {
+    display: none; /* Hide text navigation items */
+  }
+
+  .myNav {
+    display: none; /* Initially hide nav items */
+    flex-direction: column;
+    position: absolute;
+    top: 93px; /* Adjust the top position according to your header height */
+    left: 0;
+    width: 100%;
+    background-color: #34516C;
+    z-index: 2; /* Ensure the menu is above the slider */
+  }
+
+  .myNav.active {
+    display: flex; /* Display nav items when active */
+  }
+
+  .myNav li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block; /* Display hamburger menu icon */
+    z-index: 3; /* Ensure the menu toggle is above the slider and the menu */
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+}
