@@ -1,9 +1,26 @@
+<!-- 
+CO2403
+The Agile Professional
+Assessment 1
+Academic Year: 2024/2025
+
+Backend Web Development:
+Adam Binns
+
+Frontend Web Development:
+Michael Denny
+
+Research and support:
+Charlie Lightfoot
+Harvey Buckel
+
+File: index.php
+-->
 <!DOCTYPE html>
-<!-- Made By Michael Denny 2024 -->
 <html lang="en">
   <head>
 	<!-- link to the stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="UTF-8">
     <meta name="description" content="Cyber test">
     <title>Main</title>
