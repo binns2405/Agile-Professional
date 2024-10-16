@@ -38,7 +38,7 @@ File: login.php
 				<li><a href="Introduction_PHP/index.php">Introduction to PHP Webpages</a></li>
 			</ul>
 		</div>
-			<p>Created by: Michael Denny (2024)</p>
+			<p>test test test</p>
 		</div>
 		
 		<div class="inner-cursor"></div>
