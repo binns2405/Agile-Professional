@@ -38,7 +38,7 @@ File: login.php
 				<li><a href="Introduction_PHP/index.php">Introduction to PHP Webpages</a></li>
 			</ul>
 		</div>
-			<p>test test test</p>
+			<p>the quick brown fox jump over the lazy dog</p>
 		</div>
 		
 		<div class="inner-cursor"></div>
