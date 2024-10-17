@@ -34,8 +34,6 @@ File: login.php
 		<div class="listcontainer">
 			<ul>
 				<li class="list-item1"><a href="home.php">Assignment Webpage</a></li>
-				<br>
-				<li><a href="Introduction_PHP/index.php">Introduction to PHP Webpages</a></li>
 			</ul>
 		</div>
 			<p>the quick brown fox jump over the lazy dog</p>
