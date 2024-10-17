@@ -9,20 +9,14 @@
 }
 
 body {
-	margin: 0; /* Remove default margin */
-  	padding: 0; /* Remove default padding */
-  	width: 100%; /* Set width to 100% */
-  	height: 100vh; /* Set height to 100% of the viewport height */
-    background-color: #f4f4f4;
-	background-image: url("Assignment1/Images/BackgroundImages/MountainBackground.jpg");
-	background-size: cover; /* This will make the background image cover the entire body */
-    background-position: center; /* This will center the background image */
-    background-repeat: no-repeat; /* This will prevent the background image from repeating */
-	background-size: auto; /* Set background image size to its intrinsic size */
-    background-attachment: fixed; /* Keep background image fixed while scrolling */
-	transition: background-image 0.4s ease-out;
-	cursor: none !important; /* Hide the default mouse cursor */
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #007fb0, #be1622);
+  background-size: 100% auto; /* Improve rendering performance */
+  cursor: none !important; /* Hide the default mouse cursor */
 }
 
 .container {
