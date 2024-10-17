@@ -20,7 +20,7 @@ File: index.php
 <html lang="en">
   <head>
 	<!-- link to the stylesheet -->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
     <meta charset="UTF-8">
     <meta name="description" content="Cyber test">
     <title>Main</title>

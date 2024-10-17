@@ -19,7 +19,7 @@ File: login.php
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="landing.css">
     <meta charset="UTF-8">
     <meta name="description" content="Page Selection">
     <title>Agile professional</title>
@@ -33,7 +33,7 @@ File: login.php
 			
 		<div class="listcontainer">
 			<ul>
-				<li class="list-item1"><a href="Assignment1/Webpages/login.php">Assignment Webpage</a></li>
+				<li class="list-item1"><a href="home.php">Assignment Webpage</a></li>
 				<br>
 				<li><a href="Introduction_PHP/index.php">Introduction to PHP Webpages</a></li>
 			</ul>
@@ -57,13 +57,13 @@ File: login.php
     // Add event listener for mouseenter event (hover)
     listItem1.addEventListener('mouseenter', function() {
       // Change the background image of the body
-      body.style.backgroundImage = "url('Assignment1/Images/BackgroundImages/Assignment1.PNG')";
+      body.style.backgroundImage = "url('mountain.jpg')";
     });
 
     // Add event listener for mouseleave event (hover out)
     listItem1.addEventListener('mouseleave', function() {
       // Restore the original background image of the body
-      body.style.backgroundImage = "url('Assignment1/Images/BackgroundImages/MountainBackground.jpg')";
+      body.style.backgroundImage = "url('mountain.jpg')";
     });
   </script>
 		
