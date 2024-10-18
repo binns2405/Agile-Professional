@@ -14,7 +14,7 @@ body {
   	width: 100%; /* Set width to 100% */
   	height: 100vh; /* Set height to 100% of the viewport height */
     background-color: #f4f4f4;
-	background-image: url("Assignment1/Images/BackgroundImages/MountainBackground.jpg");
+	background-image: url("Media/mountain.jpg");
 	background-size: cover; /* This will make the background image cover the entire body */
     background-position: center; /* This will center the background image */
     background-repeat: no-repeat; /* This will prevent the background image from repeating */
@@ -77,11 +77,11 @@ li::marker {
 		 
 /* Change background image on hover */
 .list-item1:hover ~ body {
-    background-image: url("Assignment1/Images/BackgroundImages/Assignment1.PNG");
+    background-image: url("Media/Assignment1.PNG");
   }
 		 
 .list-item2:hover ~ body {
-    background-image: url("Assignment1/Images/BackgroundImages/Assignment1.PNG");
+    background-image: url("Media/Assignment1.PNG");
   }
 		 
 .inner-cursor{
