@@ -42,7 +42,7 @@
                 if ($row['booked'] == $row['maxCap']) {
                   echo "<p>Sorry, this open day is fully booked.</p>";
                 } else {
-                  echo "<button onclick='popup(\"openday.php?id=" . $row['eventid'] . "\")'>Book</button>";
+                  echo "<button onclick='popup(\"opendaybook.php?id=" . $row['eventid'] . "\")'>Book</button>";
                 }
                 
                 echo "</div>";
