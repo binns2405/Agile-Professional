@@ -158,7 +158,7 @@ a.href {
     <!-- link to the stylesheet -->
     <meta charset="UTF-8">
     <meta name="description" content="Page Selection">
-    <title>Michael Denny UCLAN Work</title>
+    <title>Agile Professional UCLAN Work</title>
   </head>
 
 	<body>
@@ -169,14 +169,14 @@ a.href {
 			
 		<div class="listcontainer">
 			<ul>
-				<li class="list-item1"><a href="#">Open Days</a></li>
+				<li class="list-item1"><a href="openday.php">Open Days</a></li>
 				<br>
-				<li class"list-item2"><a href="#">Applicant Days</a></li> <!--- Code needs updating to support list item 2 css and javascript -->
+				<li class"list-item2"><a href="applicant.php">Applicant Days</a></li> <!--- Code needs updating to support list item 2 css and javascript -->
 				<br>
-				<li class"list-item3"><a href="#">First Year Induction</a></li><!--- Code needs updating to support list item 3 css and javascript -->
+				<li class"list-item3"><a href="induction.php">First Year Induction</a></li><!--- Code needs updating to support list item 3 css and javascript -->
 			</ul>
 		</div>
-			<p>Created by: Michael Denny (2024)</p>
+			<p>Created by: Michael, Adam, Harvey, Charlie</p>
 		</div>
 		
 		<div class="inner-cursor"></div>
