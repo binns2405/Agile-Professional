@@ -92,6 +92,10 @@ li::marker {
     background-image: url("Media/MountainPink.jpg");
   }
 		 
+.list-item3:hover ~ body {
+    background-image: url("Media/OrangeMountains.jpg");
+  }
+		 
 .inner-cursor{
   position: fixed;
   left: 10px;
@@ -171,9 +175,9 @@ a.href {
 			<ul>
 				<li class="list-item1"><a href="openday.php">Open Days</a></li>
 				<br>
-				<li class"list-item2"><a href="applicant.php">Applicant Days</a></li> <!--- Code needs updating to support list item 2 css and javascript -->
+				<li class="list-item2"><a href="applicant.php">Applicant Days</a></li> <!--- Code needs updating to support list item 2 css and javascript -->
 				<br>
-				<li class"list-item3"><a href="induction.php">First Year Induction</a></li><!--- Code needs updating to support list item 3 css and javascript -->
+				<li class="list-item3"><a href="induction.php">First Year Induction</a></li><!--- Code needs updating to support list item 3 css and javascript -->
 			</ul>
 		</div>
 			<p>Created by: Michael, Adam, Harvey, Charlie</p>
@@ -206,8 +210,6 @@ a.href {
       body.style.backgroundImage = "url('Media/mountain.jpg')";
     });
 			 
-			 
-			 
      // Add event listener for mouseenter event TWO (hover)
     listItem2.addEventListener('mouseenter', function() {
       // Change the background image of the body
@@ -216,6 +218,18 @@ a.href {
 
     // Add event listener for mouseleave event TWO (hover out)
     listItem2.addEventListener('mouseleave', function() {
+      // Restore the original background image of the body
+      body.style.backgroundImage = "url('Media/mountain.jpg')";
+    });
+			 
+	     // Add event listener for mouseenter event THREE (hover)
+    listItem3.addEventListener('mouseenter', function() {
+      // Change the background image of the body
+      body.style.backgroundImage = "url('Media/OrangeMountains.jpg')";
+    });
+
+    // Add event listener for mouseleave event THREE (hover out)
+    listItem3.addEventListener('mouseleave', function() {
       // Restore the original background image of the body
       body.style.backgroundImage = "url('Media/mountain.jpg')";
     });

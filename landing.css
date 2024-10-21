@@ -81,9 +81,13 @@ li::marker {
   }
 		 
 .list-item2:hover ~ body {
-    background-image: url("Media/Assignment1.PNG");
+    background-image: url("Media/MountainPink.jpg");
   }
-		 
+
+.list-item3:hover ~ body {
+    background-image: url("Media/MountainPink.jpg");
+  }	 
+
 .inner-cursor{
   position: fixed;
   left: 10px;
