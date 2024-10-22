@@ -1,9 +1,11 @@
 /* CSS Document */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 a {
-  color: white; }
+  color: white; 
+}
 
 h1{
 	text-align: center;
@@ -23,7 +25,8 @@ p{
   animation-name: fade-in;
   animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards; 
+}
 
 .carousel {
   width: relative;
@@ -31,10 +34,14 @@ p{
   border-radius: 3px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
-  .carousel:hover .controls {
-    opacity: 1; }
-  .carousel .controls {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.carousel:hover .controls {
+    opacity: 1; 
+}
+
+.carousel .controls {
     opacity: 0;
     display: flex;
     position: absolute;
@@ -43,10 +50,12 @@ p{
     justify-content: space-between;
     width: 100%;
     z-index: 99999;
-    transition: all ease 0.5s; }
-    .carousel .controls .control {
-      margin: 0 5px;
-      display: flex;
+    transition: all ease 0.5s; 
+}
+
+.carousel .controls .control {
+    margin: 0 5px;
+    display: flex;
       align-items: center;
       justify-content: center;
       height: 40px;
@@ -329,15 +338,14 @@ footer {
 .myNav {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0s 0.3s; /* Smooth fade-in with a delay for visibility */
+    transition: opacity 0.3s ease-in-out, visibility 0s 0.3s; /* Smooth fade-in with a delay */
     flex-direction: column;
     position: absolute;
-    top: 170px; /* Adjust the top position according to your header height */
+    top: 170px; 
     left: 0;
     width: 100%;
     background-color: white;
     z-index: 2;
-    /* Initially hide nav items */
 }
 
 .myNav.active {
@@ -345,7 +353,7 @@ footer {
     opacity: 1;
     visibility: visible;
     transition: opacity 0.3s ease-in-out, visibility 0s; /* No delay when visible */
-    /* Display nav items when active */ }
+}
 
   .myNav li {
     text-align: left;
@@ -362,7 +370,7 @@ footer {
     cursor: pointer;
     width: 30px;  
     height: 24px; 
-    transition: transform 0.3s ease-in-out; /* Smooth rotation for the entire hamburger */
+    transition: transform 0.3s ease-in-out; /* Smooth rotation for hamburger */
 }
 
 .menu-toggle span {
@@ -375,7 +383,12 @@ footer {
 
 /* Rotate the entire hamburger icon */
 .menu-toggle.rotate {
-    transform: rotateZ(90deg); 
+    transform: rotateZ(90deg);
+}
+	
+/* Rotate the entire hamburger icon */
+.menu-toggle.rotate span {
+    background-color:rgba(121,214,253,1.00);
 }
 
 
