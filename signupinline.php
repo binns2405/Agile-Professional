@@ -1,40 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                background-color: #FFFFFF;
+            }
+        </style>
         <?php
             include 'connection.inc.php';
             include 'functions.inc.php';
             session_start();
         ?>
-        <link rel="stylesheet" type="text/css" href="signup.css">
     </head>
     <body>
-    <header>
-      <!-- header bar that is going to appear at the top of the screen -->
-      <a href="openday.php">
-        <img src="Media/logo.svg" alt="UCLan logo" class="logo">
-      </a>
-      <h2 style="color: white; font-size: 150%; padding-right: 30px; padding-top: 80px;">UCLAN Cybersecurity Prospects</h2>
-      <nav>
-        <div class="menu-toggle" id="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul class="myNav">
-          <li class="navList"><a href="landing.php">Home</a></li>
-          <li class="navList"><a href="openday.php">Open Days</a></li>
-          <li class="navList"><a href="applicant.php">Applicant Days</a></li>
-          <li class="navList"><a href="induction.php">Induction</a></li>
-          <?php if ($_SESSION['loggedin']) { echo "<li class='navList'><a href='logout.php'>Logout</a></li>"; } else { echo "<li class='navList'><a href='login.php'>Login</a></li>"; } ?>
-        </ul>
-        <hr>
-      </nav>
-    </header>
-    <main class="section-signup">
-        <div class="formassets">
-        <form action="signup.php" method="post">
-            <div class="left">
+        <form action="signupinline.php" method="post">
             <label for="title">Title:</label>
             <select name="title" id="title">
                 <option value="">Select a title</option>
@@ -66,9 +45,7 @@
             
             <label for="addr2">Address Line 2:</label>
             <input type="text" id="addr2" name="addr2"><br><br>
-            </div>
             
-            <div class="right">
             <label for="town">Town:</label>
             <input type="text" id="town" name="town"><br><br>
             
@@ -106,14 +83,11 @@
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select><br><br>
-            </div>
-            </div>
             
-            <input id="signupbutton" type="submit" value="Sign Up">
+            <input type="submit" value="Sign Up">
         </form>
         <div>
-            <p>Already have an account? <a href="login.php">Login here</a></p>
+            <p>Already have an account? <a href="logininline.php">Login here</a></p>
         </div>
-    </main>
     </body>
 </html>
