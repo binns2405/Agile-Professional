@@ -1,6 +1,6 @@
 <?php
 
-$host = "binns2405.duckdns.org:3300";
+$host = "localhost";
 $user = "Agile";
 $pass = "Professional";
 $db = "agileProfessional";
