@@ -115,5 +115,50 @@
             <p>Already have an account? <a href="login.php">Login here</a></p>
         </div>
     </main>
+
+    <?php
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                $title = $_POST['title'];
+                $sname = $_POST['sname'];
+                $fname = $_POST['fname'];
+                $mname = $_POST['mname'];
+                $dob = $_POST['dob'];
+                $email = $_POST['email'];
+                $confemail = $_POST['confemail'];
+                $houseno = $_POST['houseno'];
+                $addr1 = $_POST['addr1'];
+                $addr2 = $_POST['addr2'];
+                $town = $_POST['town'];
+                $county = $_POST['county'];
+                $postcode = $_POST['postcode'];
+                $country = $_POST['country'];
+                $telno = $_POST['telno'];
+                $password = $_POST['password'];
+                $confirmpassword = $_POST['confirmpassword'];
+                $course = $_POST['course'];
+                $applicant = $_POST['applicant'];
+                $query = "SELECT * FROM `users` WHERE email = '$email'";
+                $result = mysqli_query($conn, $query);
+                if (mysqli_num_rows($result) > 0) {
+                    echo "<script>alert('Sorry, this account email already exists.');</script>";
+                } else {
+                    if ($email != $confemail) {
+                        echo "<script>alert('Sorry, the email addresses you entered do not match.');</script>";
+                    } else if ($password != $confirmpassword) {
+                        echo "<script>alert('Sorry, the passwords you entered do not match.');</script>";
+                    } else {
+                        $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
+                        $query = "INSERT INTO `users` (title, sname, fname, mname, dob, email, houseno, addr1, addr2, town, county, postcode, country, telno, password, course, applicant) VALUES ('$title', '$sname', '$fname', '$mname', '$dob', '$email', '$houseno', '$addr1', '$addr2', '$town', '$county', '$postcode', '$country', '$telno', '$hashedpassword', '$course', '$applicant')";
+                        if (mysqli_query($conn, $query)) {
+                            echo "<script>alert('Account created successfully.');</script>";
+                            echo "<script>window.location = 'logininline.php';</script>";
+                        } else {
+                            echo "<script>alert('Sorry, there was an error creating your account.');</script>";
+                        }
+                    }
+                }
+            }
+        ?>
+
     </body>
 </html>

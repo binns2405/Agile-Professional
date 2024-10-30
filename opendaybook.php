@@ -33,6 +33,17 @@
                 background-color: #FFFFFF;
             }
         </style>
+        <script>
+                    function inlinebook() {
+                        <?php $_SESSION['redirect'] = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+                        window.location.href = 'logininline.php';
+                    }
+
+                    function book() {
+                        var form = document.getElementById("booking");
+                        form.innerHTML = "<p>You are allowed to bring upto 2 guests with you</p><form action='confirmation.php?event=open' method='post' id='book'><label for='guests'>Number of Guests:</label><select id='guests' name='guests' required><option value=''>Select an option</option><option value='0'>0</option><option value='1'>1</option><option value='2'>2</option></select><br><br><input type='submit' value='Book Now'></form>";   
+                    }
+                </script>
     </head>
     <body>
         <div>
@@ -42,15 +53,9 @@
             <p>Event Code: <?php echo $eventid; ?></p>
             <p>Location: <?php echo $location; ?></p>
             <p>Price: <?php echo $price; ?></p>
-            <div>
+            <div id="booking">
                 <p>To book onto this event you must create an account with us. if you are not logged inn or do not have an account the button will redirect you to do so before continuing</p>
-                <button onclick="inlinebook()">Book Now</button>
-                <script>
-                    function inlinebook() {
-                        <?php $_SESSION['redirect'] = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
-                        window.location.href = 'logininline.php';
-                    }
-                </script>
+                <?php if ($_SESSION['loggedin']) { echo "<script>book()</script>"; } else { echo "<button onclick='inlinebook()'>Login to Book Now</button>"; } ?>
             </div>
         </div>
     </body>
