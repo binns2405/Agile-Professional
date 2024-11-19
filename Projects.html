@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+	<!--MadeByBen--->
+    <meta charset="utf-8">
+    <title>EPSILON STUDIOS | PROJECTS</title>
+    <link rel="icon" href="images/websiteicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/websiteicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="MainStyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+	
+  <!---Inline_Style--->
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .jeff {}
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      /* Set the minimum height of the body to cover the entire viewport */
+      background-color: black !important;
+      /* Set the background color to black */
+    }
+  </style>
+	
+  <body>
+    <body class="fade-in">
+		
+      <!---- Nav_BAR--->
+      <nav>
+        <div class="logo">
+          <a class="img" href="index.html">
+            <img src="images/epsilon2.png" alt="Logo">
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="Projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="About.html">About Us</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+		
+      <!---Image_Slide------>
+      <br>
+      <div class="slider">
+        <div class="slide active">
+          <img src="images/mw2.jpg" alt="Image 1">
+          <div class="caption">Modern Warfare 2</div>
+        </div>
+        <div class="slide">
+          <img src="images/Diablo4.jpg" alt="Image 2">
+          <div class="caption">Diablo IV</div>
+        </div>
+        <div class="slide">
+          <img src="images/Poe.jpg" alt="Image 3">
+          <div class="caption">Path of Exile</div>
+        </div>
+        <div class="slide">
+          <img src="images/CS2.jpg" alt="Image 4">
+          <div class="caption">Counter strike 2</div>
+        </div>
+        <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="next" onclick="changeSlide(1)">&#10095;</div>
+      </div>
+		
+      <!---Policy_Bar---->
+      <div class="text-bar">
+        <a href="docs/privacypolicy.docx" download="docs/privacypolicy">PRIVACY POLICY</a>
+        <a href="docs/termsofservice.docx" download="docs/termsofservice">TERMS OF SERVICE</a>
+        <a href="contact.html">CONTACT US</a>
+        <p> "Copyright © 2023 Epsilon Studios" </p>
+      </div>
+		
+      <!---MainBody--->
+      <div class="Responsive">
+        <a href="Images\mw2.jpg">
+          <img src="Images\mw2.jpg" alt="MW2 click for bigger image" class="responsive">
+        </a>
+        <div class="ResponsiveText">
+          <h1> Modern Warfare 2 Remastered</h1>
+          <p> We are excited to anounce that we, as a company, are re-making Modern Warfare. We aim for it to be multiplayer only. We are going back to old school multiplayer setting, no bullet drop and one hit snipers. It will also include new weapons and perks, all perks will be the same as the original release. Yes commando pro will be broken, same with danger close. </p>
+        </div>
+      </div>
+      <div class="Responsive">
+        <a href="Images\Diablo4.jpg">
+          <img src="Images\Diablo4.jpg" alt="Diablo4 click for bigger image" class="responsive">
+        </a>
+        <div class="ResponsiveText">
+          <h1> Diablo IV</h1>
+          <p> Also in the works is the new edition of Diablo. We cannot disclose much information at this current data and time. Please come back later for updates. </p>
+        </div>
+      </div>
+      <div class="Responsive">
+        <a href="Images\poe.jpg">
+          <img src="Images\poe.jpg" alt="Path Of Exile click for bigger image" class="responsive">
+        </a>
+        <div class="ResponsiveText">
+          <h1> Path of Exile</h1>
+          <p> Path of exile has been an ongoing game development for us, it is constantly being updated and fixed. We are excited for the future of this game, as our player base expands our avaiable funds also increases. This is a free game with the option to buy visual add-ons, we believe this game structure is the main reason for this games continued success. </p>
+        </div>
+      </div>
+      <div class="Responsive">
+        <a href="Images\CS2.jpg">
+          <img src="Images\CS2.jpg" alt="Counter Strike 2 click for bigger image" class="responsive">
+        </a>
+        <div class="ResponsiveText">
+          <h1> Counter Strike 2</h1>
+          <p> Counter-Strike 2 is the largest technical leap forward in Counter-Strike’s history, ensuring new features and updates for years to come. All of the game’s new features will be revealed when it officially launches this summer, but the road to Counter-Strike 2 begins today as a Limited index for select CS:GO players. During this indexing period, we’ll be evaluating a subset of features to shake out any issues before the worldwide release. </p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+		
+      <!------Cursor_Links--->
+      <div class="inner-cursor"></div>
+      <div class="outer-cursor"></div>
+		
+      <!------Scripts--->
+      <script src="MainScript.js"></script>
+      <script src="mouse.js"></script>
+		
+    </body>
+  </body>
+</html>
