@@ -1,0 +1,81 @@
+/* Style for the loading grid container */
+#loadingGrid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 285px);
+    grid-template-rows: repeat(auto-fill, 395px);
+    gap: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Style for the red background block */
+.red-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: 9998;  /* Behind the SVG, above the grid */
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+/* Position the image in the center of the screen */
+#centerImage {
+    position: absolute; /* Absolute positioning */
+    top: 50%;           /* Center vertically */
+    left: 50%;          /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to exactly center */
+    z-index: 10000;     /* Ensure it is on top of other elements */
+    opacity: 1;         /* Initially visible */
+    transition: opacity 1.5s ease-out; /* Fade out over 1.5s */
+}
+
+
+/* Fade-in effect for the grid blocks */
+.grid-block {
+    width: 285px;
+    height: 395px;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Fade in keyframes for blocks */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade color effect for blocks */
+@keyframes fadeColor {
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+/* Add fade-out for SVG */
+@keyframes fadeOutSVG {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
