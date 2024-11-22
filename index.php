@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="utf-8">
@@ -74,7 +74,7 @@
       <div class="outer-cursor"></div>
 
     <!-- Scripts -->
-	    <script src="mouse.js"></script>
+	<script src="mouse.js"></script>
 	<script src="test.js"></script>
     <script src="MainScript.js"></script>
 
