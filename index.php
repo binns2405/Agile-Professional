@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>test</title>
+    <title>tes</title>
     
     <!-- Styles and Fonts -->
     <link rel="icon" href="images/websiteicon.png" type="image/png">
