@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>tes</title>
+    <title>test</title>
     
     <!-- Styles and Fonts -->
     <link rel="icon" href="images/websiteicon.png" type="image/png">
@@ -41,24 +41,24 @@
     <section class="black-section">
 		 <div class="image-overlay">
 		<img src="white.png" alt="Overlay Image">
+			 		<button class="startbutton">test</button>
         </div>
         <video autoplay loop muted class="myVideo" style="width: 2500px; height: 2000px;">
             <source src="Videos/Free Static Glitch Screen - Red Retro TV.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
     </section>
 
     <!-- Red Section -->
     <section class="red-section">
-        <h2>Red Background Section</h2>
-        <p>This section has a red background.</p>
+        <h2 class="Section-Title">DDOS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
 	
 	<!-- Black Section -->
 	    <section class="black-section">
-        <h2>Black Background Section</h2>
-        <p>This section has a black background.</p>
+        <h2 class="Section-Title">Spear Phising</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
 
     <!-- Policy Bar -->
