@@ -2,10 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Disable scrolling while the grid is active
     document.body.style.overflow = 'hidden';
 
-    // Create the red background block behind the grid
-    const redBackground = document.createElement('div');
-    redBackground.classList.add('red-background');
-    document.body.appendChild(redBackground);
+
 
     // Create the SVG image and center it on the screen
     const svgImage = document.createElement('img');
@@ -48,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const delay = `${Math.random() * 2}s`;  // Random delay between 0 and 2 seconds
             block.style.animationDelay = delay;
 
-            // Apply fade animation class
+            // Apply fade animation class to each block
             block.classList.add('fade-animation');
         }
     }
@@ -56,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set a timeout to fade out the grid after 3 seconds and re-enable scrolling
     setTimeout(() => {
         // Start fading out the entire grid by changing its opacity
+        gridContainer.style.transition = 'opacity 1s ease-out';  // Smooth transition for opacity
         gridContainer.style.opacity = '0';  // Fade out the grid
 
         // After a small delay (to let the fade-out take effect), hide the grid
@@ -65,18 +63,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Wait for 1.5 seconds before starting to fade out the red background and SVG
             setTimeout(() => {
-                // Fade out the red background
-                redBackground.style.opacity = '0';  // Fade out the red background
 
                 // Fade out the SVG
-                svgImage.style.animation = 'fadeOutSVG 1s ease-out forwards';
+                svgImage.style.transition = 'opacity 1s ease-out';  // Smooth transition for opacity
+                svgImage.style.opacity = '0';  // Fade out the SVG
 
                 // After the red background and SVG fade out, hide them completely
                 setTimeout(() => {
-                    redBackground.style.display = 'none';  // Hide the red background
                     svgImage.style.display = 'none';  // Hide the SVG
-                }, 1000);  // Wait for the fade-out transition to complete
-            }, 1500);  // Delay of 1.5 seconds before fading out the red background and SVG
+                }, 500);  // Wait for the fade-out transition to complete
+            }, 1);  // Delay of 1.5 seconds before fading out the red background and SVG
 
         }, 1000);  // Wait for 1 second after grid fade-out to ensure the effect is visible
 

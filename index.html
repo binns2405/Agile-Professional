@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="MainStyleSheet.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="test.css">
-    
-    <!-- Inline Style for Body test-->
     <style>
         body {
             font-family: 'Oswald', sans-serif;
@@ -28,7 +26,7 @@
     <nav>
         <div class="logo">
             <a class="img" href="index.html">
-                <img src="images/epsilon2.png" alt="Logo">
+                <img src="uclansolowhitelogo.png" alt="Logo">
             </a>
         </div>
         <ul>
@@ -39,19 +37,29 @@
         </ul>
     </nav>
 
-    <!-- Video Background -->
-    <div style="video">
-        <video autoplay loop muted id="myVideo">
+    <!-- Overlay With Video -->
+    <section class="black-section">
+		 <div class="image-overlay">
+		<img src="white.png" alt="Overlay Image">
+        </div>
+        <video autoplay loop muted class="myVideo" style="width: 2500px; height: 2000px;">
             <source src="Videos/Free Static Glitch Screen - Red Retro TV.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </div>
 
-    <!-- Main Content -->
-    <div class="home">
-        <a class="img"><img src="images/epsilon2.png" alt="Logo"></a>
-        <p>UCLan Cyber</p>
-    </div>
+    </section>
+
+    <!-- Red Section -->
+    <section class="red-section">
+        <h2>Red Background Section</h2>
+        <p>This section has a red background.</p>
+    </section>
+	
+	<!-- Black Section -->
+	    <section class="black-section">
+        <h2>Black Background Section</h2>
+        <p>This section has a black background.</p>
+    </section>
 
     <!-- Policy Bar -->
     <div class="text-bar">
@@ -60,6 +68,10 @@
         <a href="contact.html">CONTACT US</a>
         <p>© 2023 Epsilon Studios</p>
     </div>
+	
+	      <!------Cursors--->
+      <div class="inner-cursor"></div>
+      <div class="outer-cursor"></div>
 
     <!-- Scripts -->
 	    <script src="mouse.js"></script>
