@@ -53,7 +53,7 @@
 		<!-- First Section (CyberSecurity) -->
 	    <section id="FirstSection" class="black-section">
         <h2 class="Section-Title">What is CYBERSECURITY</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+        <p>In todays world, we all have some form of information stored on an electronic device, your own medical records will be kept on a national database in the NHS after all. Therefore, the importance of security is progressively more and more critical. That is why we are here to teach you some techniques that can help you keep your own information and your family's information safe and secure from malicious people that intend to exploit you for money or to ruin your life.</p>	
 			<a href="#DDOS"><button>Learn about DDOS</button></a>
 			<a href="#SpearPhising"><button>Learn about Spear Phising</button></a>
     </section>
@@ -61,7 +61,7 @@
     <!-- Second Section (Learn About DDOS) -->
     <section id="DDOS" class="red-section">
         <h2 class="Section-Title">DDOS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Struggle logging onto Fortnite? Amazon not loading? Their servers may have been targeted by a DDOS attack. \n DOS (Denial of Service) and DDOS (Distributed Denial of Service) attacks both involve the mass increase in network traffic, with the intention of hindering performance and possibly bringing services to a halt.</p>
 		<button>Learn more about DDOS</button>
 		<a href="#SpearPhising"><button>Learn about Spear Phising</button></a>
     </section>
@@ -69,7 +69,7 @@
 	<!-- Third Section (Learn About Spear Phising) -->
 	    <section id="SpearPhising" class="black-section">
         <h2 class="Section-Title">Spear Phising</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Ever recieved an email, text or phonecall from an unknown address or number? Did they claim to be from a big company like Sky, Virgin or a bank? You may have been a target of a phishing attempt. An attack that aims to exploit human weaknesses to gather sensitive information such as addresses, login information and security questions.</p>
 		<button>Learn more about Spear Phising</button>
 		<a href="#DDOS"><button>Learn about DDOS</button></a>
     </section>
