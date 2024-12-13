@@ -31,7 +31,7 @@
         </div>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="Projects.html">DDOS</a></li>
+            <li><a href="ddos.html">DDOS</a></li>
             <li><a href="SpearPhising.html">Spear Phising</a></li>
         </ul>
     </nav>
