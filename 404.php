@@ -5,7 +5,7 @@
     <title>404 | Page Not Found</title>
     
     <!-- Styles and Fonts -->
-    <link rel="icon" href="images/websiteicon.png" type="image/png">
+    <link rel="icon" href="uclansolowhitelogo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="MainStyleSheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="test.css">

@@ -5,7 +5,7 @@
     <title>UCLANCYBER | Home</title>
     
     <!-- Styles and Fonts -->
-    <link rel="icon" href="images/websiteicon.png" type="image/png">
+    <link rel="icon" href="uclansolowhitelogo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="MainStyleSheet.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="test.css">
@@ -31,8 +31,8 @@
         </div>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="ddos.html">DDOS</a></li>
-            <li><a href="SpearPhising.html">Spear Phising</a></li>
+            <li><a href="ddos.php">DDOS</a></li>
+            <li><a href="SpearPhising.php">Spear Phising</a></li>
         </ul>
     </nav>
 
@@ -62,7 +62,7 @@
     <section id="DDOS" class="red-section">
         <h2 class="Section-Title">DDOS</h2>
         <p>Struggle logging onto Fortnite? Amazon not loading? Their servers may have been targeted by a DDOS attack. \n DOS (Denial of Service) and DDOS (Distributed Denial of Service) attacks both involve the mass increase in network traffic, with the intention of hindering performance and possibly bringing services to a halt.</p>
-		<button>Learn more about DDOS</button>
+		<a href="ddos.php"><button>Learn more about DDos</button></a>
 		<a href="#SpearPhising"><button>Learn about Spear Phising</button></a>
     </section>
 	
@@ -70,7 +70,7 @@
 	    <section id="SpearPhising" class="black-section">
         <h2 class="Section-Title">Spear Phising</h2>
         <p>Ever recieved an email, text or phonecall from an unknown address or number? Did they claim to be from a big company like Sky, Virgin or a bank? You may have been a target of a phishing attempt. An attack that aims to exploit human weaknesses to gather sensitive information such as addresses, login information and security questions.</p>
-		<button>Learn more about Spear Phising</button>
+		<a href="SpearPhising.php"><button>Learn about Spear Phising</button></a>
 		<a href="#DDOS"><button>Learn about DDOS</button></a>
     </section>
 

@@ -5,7 +5,7 @@
     <title>UCLANCYBER | Home</title>
     
     <!-- Styles and Fonts -->
-    <link rel="icon" href="images/websiteicon.png" type="image/png">
+    <link rel="icon" href="uclansolowhitelogo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="MainStyleSheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="test.css">
@@ -30,13 +30,13 @@
         </div>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="ddos.html">DDOS</a></li>
-            <li><a href="SpearPhising.html">Spear Phising</a></li>
+            <li><a href="ddos.php">DDOS</a></li>
+            <li><a href="SpearPhising.php">Spear Phising</a></li>
         </ul>
     </nav>
     
         <!-- First Section (CyberSecurity) -->
-        <section id="FirstSection" class="black-section">
+        <section id="FirstSection" class="red-section">
         <h2 class="Section-Title">What is DDOS</h2>
         <p>
             <strong>What is DDOS/DOS:</strong><br>

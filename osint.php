@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <head>
-	<!--MadeBySam--->
     <meta charset="utf-8">
     <title>UCLANCBYER | SpearPhising</title>
     <link rel="icon" href="uclansolowhitelogo.png" type="image/png">
@@ -35,14 +34,14 @@
       <!---- Nav_BAR --->
     <nav>
         <div class="logo">
-            <a class="img" href="index.html">
+            <a class="img" href="index.php">
                 <img src="uclansolowhitelogo.png" alt="Logo">
             </a>
         </div>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="Projects.html">DDOS</a></li>
-            <li><a href="SpearPhising.html">Spear Phising</a></li>
+            <li><a href="Projects.php">DDOS</a></li>
+            <li><a href="SpearPhising.php">Spear Phising</a></li>
         </ul>
     </nav>
 		
