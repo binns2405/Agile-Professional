@@ -73,7 +73,7 @@
             <li>Validate websites and URLs to avoid clicking on dangerous links.</li>
             <li>Independently visit an organization’s official website instead of clicking links in emails.</li>
         </ul>
-        <a href="osint.php"><button style="background-color: red;">Try spear phising</button></a>
+        <a href="spearphisingemulator.php"><button style="background-color: red;">Try spear phising</button></a>
     </div>
 
     <!------Cursors--->

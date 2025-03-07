@@ -61,6 +61,7 @@
             - What is an attack surface? | Cloudflare<br>
             - What is Anycast? | How does Anycast work? | Cloudflare<br>
         </p>
+		<a href="ddosemulator.php"><button style="background-color: red;">Try DDOSing</button></a>
     </section>
 
     <!------Cursors--->
